@@ -1,0 +1,67 @@
+/* tag font and colors */
+
+h1,
+h2,
+h3 {
+    color: #bf2d2d !important;
+    font-family: 'Rozha One', serif !important;
+    font-weight: normal !important;
+
+}
+
+h4 {
+    color: #000 !important;
+    font-family: 'Montserrat', serif !important;
+}
+
+div,
+p,
+li {
+    font-family: 'Montserrat', serif !important;
+    font-size: 12px !important;
+} 
+
+/* /tag font and colors */
+
+/* heading font sizes*/
+
+h1 {
+    font-size: 25px !important;
+}
+h2 {
+    font-size: 17px !important;
+}
+h3 {
+    font-size: 14px !important;
+}
+h4 {
+    font-size: 12px !important;
+}
+
+/* /heading font sizes */
+
+/* unordered list */
+
+/* 1st level list */
+.ql-rendered-list-container .ql-rendered-bullet-list:before {
+    font-size: 33px !important;
+    line-height: 0.4em !important;
+}
+
+/* 2nd level list */
+.ql-rendered-list-container .ql-rendered-bullet-list > .ql-rendered-list-container .ql-rendered-bullet-list:before {
+    content: '⚬' !important;
+    font-size: 13px !important;
+    line-height: 1.3em !important;
+}
+
+.cu-editor li:not(.ql-direction-rtl):before {
+    margin-left: -20.7px !important;
+}
+
+/* 3rd level list */
+
+.ql-rendered-list-container .ql-rendered-bullet-list > .ql-rendered-list-container .ql-rendered-bullet-list > .ql-rendered-list-container .ql-rendered-bullet-list:before {
+    content: '▪' !important;
+}
+/* /unordered list */
