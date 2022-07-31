@@ -9,8 +9,9 @@ body::before {
     background-image: url('testata-wip.jpg');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 346px;
+    background-position: center;
+    width: 100vw;
+    height: 15vh;
     display: block;
 }
 
