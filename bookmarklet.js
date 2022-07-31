@@ -2,5 +2,25 @@
     const headTag = document.querySelector('head');
     const styleTag = document.querySelector('head > style');
     styleTag.setAttribute("media", "screen, print");
-    headTag
+    const sheet = document.createElement('link');
+    sheet.rel = 'stylesheet';
+    sheet.setAttribute("media", "screen, print");
+    sheet.href = 'https://elmurie.github.io/wip_doc/main.css';
+    headTag.prepend(sheet);
+    const googleFontApi = document.createElement('link');
+    googleFontApi.rel = 'preconnect';
+    googleFontApi.setAttribute("media", "screen, print");
+    googleFontApi.href = 'https://fonts.googleapis.com';
+    headTag.prepend(googleFontApi);
+    const gStatic = document.createElement('link');
+    gStatic.rel = 'preconnect';
+    gStatic.setAttribute("media", "screen, print");
+    gStatic.href = 'https://fonts.gstatic.com';
+    gStatic.setAttribute("crossorigin", '');
+    headTag.prepend(gStatic);
+    const gFontsSheet = document.createElement('link');
+    gFontsSheet.rel = 'stylesheet';
+    gFontsSheet.setAttribute("media", "screen, print");
+    gFontsSheet.href = 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap';
+    headTag.prepend(gFontsSheet);
 })();
